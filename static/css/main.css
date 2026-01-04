@@ -1,0 +1,222 @@
+/* Material 3 Design Tokens */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    /* M3 Color System (Baseline Purple/M3 Default-ish) */
+    --md-sys-color-primary: #6750A4;
+    --md-sys-color-on-primary: #FFFFFF;
+    --md-sys-color-primary-container: #EADDFF;
+    --md-sys-color-on-primary-container: #21005D;
+
+    --md-sys-color-secondary: #625B71;
+    --md-sys-color-on-secondary: #FFFFFF;
+    --md-sys-color-secondary-container: #E8DEF8;
+    --md-sys-color-on-secondary-container: #1D192B;
+
+    --md-sys-color-tertiary: #7D5260;
+    --md-sys-color-on-tertiary: #FFFFFF;
+    --md-sys-color-tertiary-container: #FFD8E4;
+    --md-sys-color-on-tertiary-container: #31111D;
+
+    --md-sys-color-error: #B3261E;
+    --md-sys-color-on-error: #FFFFFF;
+    --md-sys-color-error-container: #F9DEDC;
+    --md-sys-color-on-error-container: #410E0B;
+
+    --md-sys-color-background: #FFFBFE;
+    --md-sys-color-on-background: #1C1B1F;
+
+    --md-sys-color-surface: #FFFBFE;
+    --md-sys-color-on-surface: #1C1B1F;
+    --md-sys-color-surface-variant: #E7E0EC;
+    --md-sys-color-on-surface-variant: #49454F;
+    --md-sys-color-outline: #79747E;
+
+    /* Shapes */
+    --md-sys-shape-corner-small: 8px;
+    --md-sys-shape-corner-medium: 12px;
+    --md-sys-shape-corner-large: 16px;
+    --md-sys-shape-corner-extra-large: 28px;
+    --md-sys-shape-corner-full: 9999px;
+
+    /* Elevation Shadows */
+    --md-sys-elevation-level1: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+    --md-sys-elevation-level2: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 6px 2px rgba(0, 0, 0, 0.15);
+    --md-sys-elevation-level3: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15);
+}
+
+/* Glassmorphism Navbar */
+.glass-effect {
+    background: rgba(255, 251, 254, 0.95) !important;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.bg-light {
+    background-color: #F3E8FF !important;
+}
+
+body {
+    background-color: #F3E8FF !important;
+    /* M3-ish light background */
+    color: var(--md-sys-color-on-background);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Typography Overrides */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    /* Bolder headings for better contrast */
+    color: var(--md-sys-color-on-surface);
+    letter-spacing: -0.02em;
+}
+
+.text-primary {
+    color: var(--md-sys-color-primary) !important;
+}
+
+.btn-text-primary {
+    color: var(--md-sys-color-primary);
+}
+
+.btn-text-primary:hover {
+    background-color: var(--md-sys-color-secondary-container);
+}
+
+/* Navbar M3 Style */
+.navbar {
+    background-color: var(--md-sys-color-surface) !important;
+    color: var(--md-sys-color-on-surface) !important;
+    box-shadow: var(--md-sys-elevation-level2);
+}
+
+.navbar-brand,
+.nav-link {
+    color: var(--md-sys-color-on-surface-variant) !important;
+    font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--md-sys-color-primary) !important;
+    background-color: var(--md-sys-color-primary-container);
+    border-radius: var(--md-sys-shape-corner-full);
+}
+
+/* Buttons M3 Style */
+.btn {
+    border-radius: var(--md-sys-shape-corner-full);
+    /* Pills */
+    padding: 10px 24px;
+    font-weight: 500;
+    text-transform: none;
+    /* M3 removes uppercase buttons */
+    box-shadow: none;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background-color: var(--md-sys-color-primary);
+    border-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+}
+
+.btn-outline-primary {
+    color: var(--md-sys-color-primary);
+    border-color: var(--md-sys-color-primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--md-sys-color-primary-container);
+    color: var(--md-sys-color-on-primary-container);
+    border-color: var(--md-sys-color-primary-container);
+}
+
+.btn-primary:hover {
+    background-color: var(--md-sys-color-primary-container);
+    color: var(--md-sys-color-on-primary-container);
+    border-color: var(--md-sys-color-primary-container);
+}
+
+.btn-secondary {
+    background-color: var(--md-sys-color-secondary);
+    border-color: var(--md-sys-color-secondary);
+    color: var(--md-sys-color-on-secondary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--md-sys-color-secondary-container);
+    color: var(--md-sys-color-on-secondary-container);
+    border-color: var(--md-sys-color-secondary-container);
+}
+
+.btn-danger {
+    background-color: var(--md-sys-color-error);
+    border-color: var(--md-sys-color-error);
+    color: var(--md-sys-color-on-error);
+}
+
+.btn-danger:hover {
+    background-color: var(--md-sys-color-error-container);
+    color: var(--md-sys-color-on-error-container);
+    border-color: var(--md-sys-color-error-container);
+}
+
+/* Cards M3 Style */
+.card {
+    border: none;
+    border-radius: var(--md-sys-shape-corner-medium);
+    background-color: var(--md-sys-color-surface);
+    box-shadow: var(--md-sys-elevation-level1);
+    transition: box-shadow 0.2s;
+}
+
+.card:hover {
+    box-shadow: var(--md-sys-elevation-level2);
+}
+
+.card-header {
+    background-color: var(--md-sys-color-surface);
+    border-bottom: 1px solid var(--md-sys-color-outline);
+    font-weight: 500;
+    padding: 16px 24px;
+}
+
+/* Form Inputs M3 Style */
+.form-control,
+.form-select {
+    border-radius: 4px 4px 0 0;
+    /* Filled text field shape */
+    background-color: var(--md-sys-color-surface-variant);
+    border: none;
+    border-bottom: 1px solid var(--md-sys-color-outline);
+    padding: 12px 16px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: var(--md-sys-color-surface-variant);
+    border-bottom: 2px solid var(--md-sys-color-primary);
+    box-shadow: none;
+}
+
+/* Unpoly Modals M3 Style */
+up-modal-content {
+    border-radius: var(--md-sys-shape-corner-extra-large);
+    overflow: hidden;
+}
+
+/* Fix Unpoly Modal background if needed */
+up-modal-backdrop {
+    background: rgba(0, 0, 0, 0.32);
+    /* M3 Scrim */
+}

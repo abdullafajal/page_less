@@ -1,0 +1,23 @@
+
+<form method="post" action="{% url 'blog:post_comment' post.slug %}" up-submit up-target=".comments-section" up-fail-target=".comment-form-container">
+    {% csrf_token %}
+    <div class="comment-form-container">
+        {% if form.non_field_errors %}
+            <div class="alert alert-danger">
+                {% for error in form.non_field_errors %}
+                    <div>{{ error }}</div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        <div class="mb-3">
+            {{ form.content }}
+            {% if form.content.errors %}
+                <div class="text-danger small">
+                    {{ form.content.errors.0 }}
+                </div>
+            {% endif %}
+        </div>
+        <button type="submit" class="btn btn-secondary btn-sm">Post Comment</button>
+    </div>
+</form>
