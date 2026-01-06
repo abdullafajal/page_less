@@ -1,4 +1,4 @@
-# Building Page Less: Part 3 - Turbocharging Navigation
+# Supercharging Django: Part 3 - Turbocharging Navigation
 
 Now that we have the base setup, let's look at how we handle navigation in **Page_Less**.
 

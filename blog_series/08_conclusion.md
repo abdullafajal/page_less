@@ -1,4 +1,4 @@
-# Building Page Less: Part 8 - Conclusion & UI Polish
+# Supercharging Django: Part 8 - Conclusion & UI Polish
 
 We have built a fully functional, high-performance blog platform. But functional isn't enough—it needs to look good.
 

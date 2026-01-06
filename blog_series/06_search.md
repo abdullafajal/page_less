@@ -1,4 +1,4 @@
-# Building Page Less: Part 6 - Instant Search
+# Supercharging Django: Part 6 - Instant Search
 
 Search is a feature where users expect instant feedback. In a traditional Django app, hitting "Search" triggers a full page reload, which feels clunky.
 

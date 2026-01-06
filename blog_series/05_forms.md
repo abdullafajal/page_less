@@ -1,4 +1,4 @@
-# Building Page Less: Part 5 - Forms & Validation
+# Supercharging Django: Part 5 - Forms & Validation
 
 Form handling in SPAs is notoriously tedious. You have to serialize data, prevent default, handle the fetch, catch 400 errors, parse the JSON errors, and manually map them back to input fields.
 

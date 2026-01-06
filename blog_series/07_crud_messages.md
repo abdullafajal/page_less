@@ -1,4 +1,4 @@
-# Building Page Less: Part 7 - CRUD without Chaos
+# Supercharging Django: Part 7 - CRUD without Chaos
 
 Creating, Reading, Updating, and Deleting (CRUD). The bread and butter of web apps.
 

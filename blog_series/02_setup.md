@@ -1,4 +1,4 @@
-# Building Page Less: Part 2 - Setting the Foundation (Django + Unpoly)
+# Supercharging Django: Part 2 - Setting the Foundation (Django + Unpoly)
 
 The beauty of Unpoly is that it requires almost zero configuration on the backend. Django doesn't even know Unpoly exists—it just serves HTML.
 

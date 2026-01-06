@@ -1,4 +1,4 @@
-# Building Page Less: Part 4 - Modal Magic & Layers
+# Supercharging Django: Part 4 - Modal Magic & Layers
 
 This is where Unpoly truly shines. Handling Modals in a traditional app usually involves:
 1.  Hidden DOM nodes (`<div id="myModal" style="display:none">`).
