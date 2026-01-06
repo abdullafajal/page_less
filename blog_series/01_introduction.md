@@ -1,4 +1,19 @@
-# Part 1: The Case for Page-Less Apps with Django & Unpoly
+# Building Page Less: A Modern Django + Unpoly Masterclass
+## Part 1: The Case for Page-Less Apps
+
+**Welcome to the "Building Page Less" series.** In this 8-part journey, we will build a production-grade blogging platform that feels like a Single-Page Application (SPA) but keeps the simplicity of a standard Django project.
+
+### Series Overview
+1.  **[Part 1: The Case for Page-Less Apps](#)** (You are here)
+2.  **[Part 2: Setting the Foundation (Django + Unpoly)](./02_setup.md)**
+3.  **[Part 3: Turbocharging Navigation](./03_navigation.md)**
+4.  **[Part 4: Modal Magic & Layers](./04_modals.md)**
+5.  **[Part 5: Forms & Validation](./05_forms.md)**
+6.  **[Part 6: Instant Search](./06_search.md)**
+7.  **[Part 7: CRUD without Chaos](./07_crud_messages.md)**
+8.  **[Part 8: Conclusion & UI Polish](./08_conclusion.md)**
+
+---
 
 ## The "SPA Fatigue" is Real
 For the last decade, web development has drifted towards a heavy, bifurcated architecture: a backend API (Django DRF, FastAPI) and a completely separate frontend SPA (React, Vue, Next.js).
@@ -31,4 +46,5 @@ We will cover:
 -   Creating a "live search" that feels instant.
 -   Handling CRUD operations without full page reloads.
 
-Let's dive in.
+---
+**[Next: Part 2 - Setting the Foundation →](./02_setup.md)**

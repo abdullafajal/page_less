@@ -1,4 +1,4 @@
-# Part 2: Setting the Foundation (Django + Unpoly)
+# Building Page Less: Part 2 - Setting the Foundation (Django + Unpoly)
 
 The beauty of Unpoly is that it requires almost zero configuration on the backend. Django doesn't even know Unpoly exists—it just serves HTML.
 
@@ -58,3 +58,6 @@ We don't need `JsonResponse`. We don't need serializers. We just render the temp
 When Unpoly requests this URL, it receives the **entire HTML page**. But because it knows it only needs to update `.main-content`, it parses the response, extracts that `div`, and swaps it into the current page.
 
 This is **Fragment Updating**, and it's the core of the Page-Less experience.
+
+---
+**[← Part 1: The Case for Page-Less Apps](./01_introduction.md) | [Part 3: Turbocharging Navigation →](./03_navigation.md)**

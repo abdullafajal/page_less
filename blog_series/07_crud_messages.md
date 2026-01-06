@@ -1,4 +1,4 @@
-# Part 7: CRUD without Chaos
+# Building Page Less: Part 7 - CRUD without Chaos
 
 Creating, Reading, Updating, and Deleting (CRUD). The bread and butter of web apps.
 
@@ -46,3 +46,6 @@ In `base.html`, our messages are inside `.main-content`.
 When we `up-target=".main-content"`, the messages block is re-rendered automatically. We get green success banners for free, with no extra JavaScript code to "toast" them.
 
 For the **Delete** action specifically, since we target `body`, the entire page refreshes, guaranteeing the message appears at the top.
+
+---
+**[← Part 6: Instant Search](./06_search.md) | [Part 8: Conclusion & UI Polish](./08_conclusion.md) →**

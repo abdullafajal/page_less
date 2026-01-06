@@ -1,4 +1,4 @@
-# Part 4: Modal Magic & Layers
+# Building Page Less: Part 4 - Modal Magic & Layers
 
 This is where Unpoly truly shines. Handling Modals in a traditional app usually involves:
 1.  Hidden DOM nodes (`<div id="myModal" style="display:none">`).
@@ -46,3 +46,6 @@ In our `LoginView` form submission:
 We added `up-layer="root"`. This tells Unpoly: *"When this form submits successfully, don't update the modal. Instead, update the ROOT layer (the background page)."*
 
 By updating the Root layer, Unpoly automatically detects that it should close the modal layer to show the updated root. The result? A user logs in, the modal vanishes, and the header updates to say "Hello, User" seamlessly.
+
+---
+**[← Part 3: Turbocharging Navigation](./03_navigation.md) | [Part 5: Forms & Validation](./05_forms.md) →**

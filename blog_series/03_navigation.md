@@ -1,4 +1,4 @@
-# Part 3: Turbocharging Navigation
+# Building Page Less: Part 3 - Turbocharging Navigation
 
 Now that we have the base setup, let's look at how we handle navigation in **Page_Less**.
 
@@ -49,3 +49,6 @@ In our CSS:
 ```
 
 No template logic (`{% if request.path == ... %}`) required!
+
+---
+**[← Part 2: Setting the Foundation](./02_setup.md) | [Part 4: Modal Magic & Layers](./04_modals.md) →**

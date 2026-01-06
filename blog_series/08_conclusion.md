@@ -1,4 +1,4 @@
-# Part 8: Conclusion & UI Polish
+# Building Page Less: Part 8 - Conclusion & UI Polish
 
 We have built a fully functional, high-performance blog platform. But functional isn't enough—it needs to look good.
 
@@ -60,4 +60,7 @@ This stack is perfect for:
 -   Content-heavy sites (blogs, news)
 
 Go forth and build **Page Less** apps!
+
+---
+**[← Part 7: CRUD without Chaos](./07_crud_messages.md)**
 

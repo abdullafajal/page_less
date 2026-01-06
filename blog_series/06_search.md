@@ -1,4 +1,4 @@
-# Part 6: Instant Search
+# Building Page Less: Part 6 - Instant Search
 
 Search is a feature where users expect instant feedback. In a traditional Django app, hitting "Search" triggers a full page reload, which feels clunky.
 
@@ -44,3 +44,6 @@ class PostListView(ListView):
 That's it. No JSON API. No specialized "Search View". The same view that renders the full page also powers the live search fragment.
 
 This pattern is incredibly powerful for filters, sorting, and pagination.
+
+---
+**[← Part 5: Forms & Validation](./05_forms.md) | [Part 7: CRUD without Chaos](./07_crud_messages.md) →**

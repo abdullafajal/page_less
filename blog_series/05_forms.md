@@ -1,4 +1,4 @@
-# Part 5: Forms & Validation
+# Building Page Less: Part 5 - Forms & Validation
 
 Form handling in SPAs is notoriously tedious. You have to serialize data, prevent default, handle the fetch, catch 400 errors, parse the JSON errors, and manually map them back to input fields.
 
@@ -45,3 +45,6 @@ Unpoly can validate fields *while you type*, using the server!
 When the user blurs this field, Unpoly sends a request to the server with *just* that field's data. The server runs its validation logic (e.g., "Username already taken") and returns the response. Unpoly extracts the `.username-errors` div and updates the UI.
 
 This gives you real-time server-side validation with zero custom API endpoints. You just use your regular Form View.
+
+---
+**[← Part 4: Modal Magic & Layers](./04_modals.md) | [Part 6: Instant Search](./06_search.md) →**
