@@ -1,10 +1,10 @@
-# Building Page Less: A Modern Django + Unpoly Masterclass
-## Part 1: The Case for Page-Less Apps
+# Supercharging Django with Unpoly: The "Page-Less" Architecture
+## Part 1: Why Unpoly is Django's Best Friend
 
-**Welcome to the "Building Page Less" series.** In this 8-part journey, we will build a production-grade blogging platform that feels like a Single-Page Application (SPA) but keeps the simplicity of a standard Django project.
+**Welcome to the "Supercharging Django" series.** In this 8-part masterclass, we will explore why **Django + Unpoly** is the ultimate stack for developers who want the speed of a Single Page App (SPA) with the simplicity of a traditional framework.
 
 ### Series Overview
-1.  **[Part 1: The Case for Page-Less Apps](#)** (You are here)
+1.  **[Part 1: Why Unpoly is Django's Best Friend](#)** (You are here)
 2.  **[Part 2: Setting the Foundation (Django + Unpoly)](./02_setup.md)**
 3.  **[Part 3: Turbocharging Navigation](./03_navigation.md)**
 4.  **[Part 4: Modal Magic & Layers](./04_modals.md)**
@@ -15,30 +15,28 @@
 
 ---
 
-## The "SPA Fatigue" is Real
-For the last decade, web development has drifted towards a heavy, bifurcated architecture: a backend API (Django DRF, FastAPI) and a completely separate frontend SPA (React, Vue, Next.js).
+## The Perfect Pair: Django & Unpoly
+If you love Django, you probably love its "batteries included" philosophy: the ORM, the Forms, the Admin, the Templates. Everything just works.
 
-While this architecture makes sense for massive teams like Facebook or Airbnb, for 90% of projects, it introduces crushing complexity:
--   **State Synchronization**: You have to manually keep the client state in sync with the server.
--   **Hydration**: You need complex SSR (Server Side Rendering) just to make your site SEO friendly.
--   **Duplicate Logic**: Validation logic often lives in both Python (backend) and JavaScript (frontend).
--   **Build Tools**: Webpack, Babel, Vite, npm, node_modules... the chain never ends.
+But in the modern web, users demand **instant navigation** and **interactive UIs**. The industry's answer has been to ditch Django templates and build complex React/Vue SPAs separated by a REST API.
 
-## Enter HTML-Over-The-Wire
-What if you could keep the simplicity of "Old School" Django—standard Views, standard Templates, standard Forms—but get the **speed and fluid feel** of a SPA?
+**This introduces massive complexity:**
+-   Duplicate validation logic (Frontend + Backend).
+-   State synchronization nightmares.
+-   Complex build pipelines (Webpack, npm, node_modules).
 
-That's the promise of **HTML-Over-The-Wire**. Instead of sending JSON and letting JavaScript build the DOM, you send fast, ready-to-render HTML fragments.
+## The Solution: HTML-Over-The-Wire
+**Unpoly** brings a different philosophy. It allows you to keep your robust Django backend exactly as it is, while giving your frontend the superpowers of a SPA.
 
-## Why Unpoly?
-There are many tools in this space (HTMX, Hotwire/Turbo), but **Unpoly** is unique. It considers itself a "progressive enhancement framework" that treats your server-side app as the source of truth.
+### Key Benefits of this Stack
+1.  **Zero "Glue" Code**: No serializers, no JSON APIs. You send HTML, Unpoly swaps it in.
+2.  **Native Speed**: Pages load instantly because you are swapping fragments, not reloading the full browser window.
+3.  **SEO Ready**: Search engines see standard HTML. No complex Server-Side Rendering (SSR) hacks needed.
+4.  **Instant Modals**: Open any Django URL in a modal with a single HTML attribute.
+5.  **Developer Joy**: You stay in Python. You write standard Django Views. You get a modern app.
 
-Unpoly gives you:
-1.  **SPA Navigation**: It intercepts links, fetches the next page via AJAX, and swaps the body content.
-2.  **Modals & Layers**: It can take *any* URL and open it in a modal or drawer, without you writing a single line of modal-management JS.
-3.  **Validation**: It can submit a form, detect a server-side error, and update *just* the form fields with the error messages.
-
-## The Page_Less Project
-In this series, we will dissect **Page_Less**, a production-ready blogging platform built with Django 6.0 and Unpoly.
+## The Project: "Page Less"
+To demonstrate these benefits, we will build **Page_Less**, a production-grade blogging platform.
 
 We will cover:
 -   How to set up the "One Layout to Rule Them All".
